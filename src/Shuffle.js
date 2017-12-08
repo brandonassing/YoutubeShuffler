@@ -8,7 +8,9 @@ export class Shuffle extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 	handleClick(e){
-		this.props.onClick("https://www.youtube.com/embed/9tt6QPhii88", "Rowboat");
+		var newSrc = "https://www.youtube.com/embed/9tt6QPhii88";
+		var newTitle = "Rowboat";
+		this.props.onClick(newSrc, newTitle);
 	}
 	render(){
 		return <Button type="primary" onClick={this.handleClick}>Shuffle</Button>;
