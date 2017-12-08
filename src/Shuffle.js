@@ -11,10 +11,22 @@ export class Shuffle extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 	handleClick(e){
-		var newSrc = "https://www.youtube.com/embed/9tt6QPhii88";
-		var newTitle = "Rowboat";
-		this.props.onClick(this.props.show, newSrc, newTitle);
+		var newSrc;
+    	var newTitle;
+   		if(this.props.show=="The Office"){
+    	  newSrc = "https://www.youtube.com/embed/8-UgRXWur_M";
+      	  newTitle = "Xmas Cancelled";
+    	}
+    	else if(this.props.show=="Arrested Development"){
+    	  
+    	}
+    	else if(this.props.show=="Parks and Recreation"){
+    	  newSrc = "https://www.youtube.com/embed/Ish8NBunrQU";
+    	  newTitle = "Garbage Fight";
+    	}
+    	this.props.onClick(this.props.show, newSrc, newTitle);
 	}
+
 	render(){
 		return <Button id="shuffle-btn" size="large" type="primary" onClick={this.handleClick}>Shuffle</Button>;
 	}

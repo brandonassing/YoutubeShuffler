@@ -3,6 +3,8 @@ import { Frame } from './Frame.js';
 import { Shuffle } from './Shuffle.js';
 import './App.css';
 import { Layout, Menu } from 'antd';
+import { MenuItems } from './Menu.js';
+
 const { Header, Content, Footer } = Layout;
 
 class App extends Component {
@@ -20,19 +22,7 @@ class App extends Component {
     return (
   //TODO move menu btns into new component that call shuffle
   <Layout className="layout">
-    <Header>
-      <div className="logo" />
-      <Menu
-        theme="dark"
-        mode="horizontal"
-        defaultSelectedKeys={['1']}
-        style={{ lineHeight: '64px' }}
-      >
-        <Menu.Item key="1">The Office</Menu.Item>
-        <Menu.Item key="2">Arrested Development</Menu.Item>
-        <Menu.Item key="3">Parks and Recreation</Menu.Item>
-      </Menu>
-    </Header>
+    <MenuItems onClick={this.onClick}/>
     <Content style={{ padding: '0 100px', height:"100vh" }}>
       <div id="card">
         <Frame src={this.state.src} title={this.state.title}/>
