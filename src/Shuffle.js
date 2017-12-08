@@ -17,9 +17,6 @@ export class Shuffle extends Component {
     	  newSrc = "https://www.youtube.com/embed/8-UgRXWur_M";
       	  newTitle = "Xmas Cancelled";
     	}
-    	else if(this.props.show=="Arrested Development"){
-    	  
-    	}
     	else if(this.props.show=="Parks and Recreation"){
     	  newSrc = "https://www.youtube.com/embed/Ish8NBunrQU";
     	  newTitle = "Garbage Fight";

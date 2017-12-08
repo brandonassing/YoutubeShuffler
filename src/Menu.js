@@ -16,9 +16,6 @@ export class MenuItems extends Component{
       newSrc = "https://www.youtube.com/embed/9tt6QPhii88";
       newTitle = "Rowboat";
     }
-    else if(e.key=="Arrested Development"){
-      
-    }
     else if(e.key=="Parks and Recreation"){
       newSrc = "https://www.youtube.com/embed/QGeG98rbyBI";
       newTitle = "Garbage Fight";
@@ -38,7 +35,6 @@ export class MenuItems extends Component{
         style={{ lineHeight: '64px' }}
       >
         <Menu.Item key="The Office">The Office</Menu.Item>
-        <Menu.Item key="Arrested Development">Arrested Development</Menu.Item>
         <Menu.Item key="Parks and Recreation">Parks and Recreation</Menu.Item>
       </Menu>
     </Header>
