@@ -8,16 +8,17 @@ const { Header, Content, Footer } = Layout;
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = { src: "https://www.youtube.com/embed/Vmb1tqYqyII",
+    this.state = { show: "The Office",
+                    src: "https://www.youtube.com/embed/Vmb1tqYqyII",
                     title: "First Aid" };
     this.onClick = this.onClick.bind(this);
   }
-  onClick(newSrc, newTitle){
-    this.setState({src: newSrc, title:newTitle});
+  onClick(newShow, newSrc, newTitle){
+    this.setState({show: newShow, src: newSrc, title:newTitle});
   }
   render() {
     return (
-
+  //TODO move menu btns into new component that call shuffle
   <Layout className="layout">
     <Header>
       <div className="logo" />
@@ -35,7 +36,7 @@ class App extends Component {
     <Content style={{ padding: '0 100px', height:"100vh" }}>
       <div id="card">
         <Frame src={this.state.src} title={this.state.title}/>
-        <Shuffle onClick={this.onClick}/>
+        <Shuffle show={this.state.show} onClick={this.onClick}/>
       </div>
     </Content>
   </Layout>
