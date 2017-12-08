@@ -13,6 +13,6 @@ export class Shuffle extends Component {
 		this.props.onClick(newSrc, newTitle);
 	}
 	render(){
-		return <Button type="primary" onClick={this.handleClick}>Shuffle</Button>;
+		return <Button id="shuffle-btn" size="large" type="primary" onClick={this.handleClick}>Shuffle</Button>;
 	}
 }

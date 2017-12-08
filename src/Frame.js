@@ -3,6 +3,13 @@ import './Frame.css';
 
 export class Frame extends Component{
 	render(){
-		return <iframe title={this.props.title} width="560" height="315" src={this.props.src} frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>;
+		//var src = this.props.src + "?autoplay=1";
+		var src = this.props.src;
+		return (
+			<div id="frame-container">
+			<iframe title={this.props.title} src={src} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen></iframe>
+			</div>
+		);
+		
 	}
 }

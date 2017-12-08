@@ -15,9 +15,8 @@ class App extends Component {
   }
   render() {
     return (
-    <div>
+    <div id="card">
       <Frame src={this.state.src} title={this.state.title}/>
-      <br/>
       <Shuffle onClick={this.onClick}/>
     </div>
     );
