@@ -16,6 +16,8 @@ export class Shuffle extends Component {
    		if(this.props.show=="The Office"){
     	  newSrc = "https://www.youtube.com/embed/8-UgRXWur_M";
       	  newTitle = "Xmas Cancelled";
+      	  // SAMPLE API CALL TO GET A FEW VIDS FROM THE USTHEOFFICE CHANNEL
+      	  //https://www.googleapis.com/youtube/v3/search?key=AIzaSyDI3MIMqFmyYbJgpRwW3ZK8rTwlQHJOYnA&part=snippet&channelId=UCa90xqK2odw1KV5wHU9WRhg
     	}
     	else if(this.props.show=="Parks and Recreation"){
     	  newSrc = "https://www.youtube.com/embed/Ish8NBunrQU";
