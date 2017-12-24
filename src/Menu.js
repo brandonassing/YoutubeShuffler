@@ -20,6 +20,10 @@ export class MenuItems extends Component{
       newSrc = "https://www.youtube.com/embed/QGeG98rbyBI";
       newTitle = "Garbage Fight";
     }
+    else if(e.key=="New Girl"){
+      newSrc = "https://www.youtube.com/embed/oH_Wk5HG0zM";
+      newTitle = "Networking Tips";
+    }
     this.props.onClick(e.key, newSrc, newTitle);
   }
 
@@ -36,6 +40,7 @@ export class MenuItems extends Component{
       >
         <Menu.Item key="The Office">The Office</Menu.Item>
         <Menu.Item key="Parks and Recreation">Parks and Recreation</Menu.Item>
+        <Menu.Item key="New Girl">New Girl</Menu.Item>
       </Menu>
     </Header>
 
